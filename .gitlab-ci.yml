@@ -1,0 +1,12 @@
+cache:
+  paths:
+  - vendor/
+
+test:
+  tags: [grifart/php7.1-with-gulp-and-all-php-modules]
+  image: grifart/php7.1-with-gulp-and-all-php-modules
+  before_script:
+    - composer install --no-interaction --prefer-dist
+  script:
+    - vendor/bin/tester ./tests/cases
+    - vendor/bin/phpstan analyse --no-progress --level 7 src/
