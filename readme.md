@@ -6,7 +6,7 @@ This is useful when there are for users that gains project-level permissions. Th
 
 Another user can have global role of administrator and can gain access to all projects without need of being part of a project.
 
-## Further sources
+## Further sources
 
 - Matej's talk: https://youtu.be/JAYeMsAxZOE?t=12m16s
 - Matej's example repo: https://github.com/matej21/nette-authorization-example/blob/master/app/Core/Security/
