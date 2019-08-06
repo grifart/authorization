@@ -6,6 +6,8 @@ This is useful when there are for users that gains project-level permissions. Th
 
 Another user can have global role of administrator and can gain access to all projects without need of being part of a project.
 
+`master` is replicated from [Grifart GitLab](https://gitlab.grifart.cz/grifart/authorization) back to [github fork](https://github.com/grifart/manogweb-backend-authorization.git).
+
 ## Further sources
 
 - Matej's talk: https://youtu.be/JAYeMsAxZOE?t=12m16s
