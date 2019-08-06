@@ -37,4 +37,11 @@ Use GitLab and open merge request, target: `master`. After merge it will be auto
 - push local master into `gitlab/master` (this will be automatically propagated to GitHub)
 - remove branches that are not needed anymore
 
+## Recommended git remotes setup
+
+```bash
+git remote add origin https://gitlab.grifart.cz/grifart/authorization.git
+git remote add github-grifart https://github.com/grifart/manogweb-backend-authorization.git
+git remote add github-mangoweb https://github.com/mangoweb-backend/authorization.git
+```
 
