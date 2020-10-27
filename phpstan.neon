@@ -1,0 +1,13 @@
+parameters:
+	level: 8
+
+	paths:
+	    - src
+
+	# todo, remove:
+	checkMissingIterableValueType: false
+
+includes:
+	- phpstan-baseline.neon
+	- vendor/grifart/phpstan-oneline/config.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
