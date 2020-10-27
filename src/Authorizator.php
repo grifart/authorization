@@ -9,9 +9,9 @@ interface Authorizator
 {
 
 	/**
-	 * @param Identity           $identity
+	 * @param Identity $identity
 	 * @param AuthorizationScope $scope
-	 * @param array              $action pair [string $resource, string $privilege]
+	 * @param array{string, string} $action pair [string $resource, string $privilege]
 	 * @return bool
 	 */
 	public function isAllowed(Identity $identity, AuthorizationScope $scope, array $action): bool;
