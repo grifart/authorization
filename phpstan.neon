@@ -4,9 +4,6 @@ parameters:
 	paths:
 	    - src
 
-	# todo, remove:
-	checkMissingIterableValueType: false
-
 includes:
 	- vendor/grifart/phpstan-oneline/config.neon
 	- vendor/phpstan/phpstan-deprecation-rules/rules.neon

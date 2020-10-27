@@ -20,8 +20,12 @@ class DefaultAuthorizator implements Authorizator
 	}
 
 
+	/**
+	 * @param array{string, string} $action
+	 */
 	public function isAllowed(Identity $identity, AuthorizationScope $scope, array $action): bool
 	{
+		/** @phpstan-ignore-next-line */
 		assert(count($action) === 2 && isset($action[0], $action[1]) && is_string($action[0]) && is_string($action[1]));
 
 		$node = $scope->getIdentityAccess($identity);

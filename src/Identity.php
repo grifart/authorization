@@ -6,6 +6,9 @@ namespace Mangoweb\Authorization;
 interface Identity
 {
 
+	/**
+	 * @return string[]
+	 */
 	public function getRoles(): array;
 
 }
