@@ -25,6 +25,9 @@ class RolesAccessNode implements AccessNode
 	}
 
 
+	/**
+	 * @return string[]
+	 */
 	public function getRoles(): array
 	{
 		return $this->roles;

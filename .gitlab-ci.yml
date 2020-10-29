@@ -8,5 +8,5 @@ test:
   before_script:
     - composer install --no-interaction --prefer-dist
   script:
-    - vendor/bin/tester ./tests/cases
-    - vendor/bin/phpstan analyse --no-progress --level 7 src/
+    - composer run nette-tester
+    - composer run phpstan

@@ -1,0 +1,9 @@
+parameters:
+	level: 8
+
+	paths:
+	    - src
+
+includes:
+	- vendor/grifart/phpstan-oneline/config.neon
+	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
