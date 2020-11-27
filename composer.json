@@ -1,5 +1,5 @@
 {
-	"name": "mangoweb/authorization",
+	"name": "grifart/scoped-authorization",
 	"license": "MIT",
 	"scripts": {
 		"phpstan": "phpstan analyze --no-progress --no-interaction --error-format compact --memory-limit 1G -c phpstan.neon",
