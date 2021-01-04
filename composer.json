@@ -21,7 +21,7 @@
 		"phpstan/phpstan": "^0.12.52",
 		"phpstan/phpstan-deprecation-rules": "^0.12.5",
 		"phpstan/phpstan-strict-rules": "^0.12.5",
-		"zendframework/zend-permissions-acl": "^2.6"
+		"laminas/laminas-permissions-acl": "^2.5"
 	},
 	"suggest": {
 		"nette/security": "For Nette authorizator support",
