@@ -2,18 +2,27 @@ cache:
   paths:
   - vendor/
 
-test:
+test.php71:
   image: grifart/php7.1-with-gulp-and-all-php-modules
-  before_script:
-    - composer install --no-interaction --prefer-dist
-  script:
-    - composer run nette-tester
-    - composer run phpstan
+  before_script: [composer install]
+  script: composer run verify
 
-test.php8:
+test.php72:
+  image: grifart/php7.2-with-gulp-and-all-php-modules
+  before_script: [composer install]
+  script: composer run verify
+
+test.php73:
+  image: grifart/php7.3-with-gulp-and-all-php-modules
+  before_script: [composer install]
+  script: composer run verify
+
+test.php74:
+  image: grifart/php7.4-with-gulp-and-all-php-modules
+  before_script: [composer install]
+  script: composer run verify
+
+test.php80:
   image: grifart/php8.0-with-all-modules-and-various-tools
-  before_script:
-    - composer install --no-interaction --prefer-dist
-  script:
-    - composer run nette-tester
-    - composer run phpstan
+  before_script: [composer install]
+  script: composer run verify
