@@ -3,8 +3,15 @@ cache:
   - vendor/
 
 test:
-  tags: [grifart/php7.1-with-gulp-and-all-php-modules]
   image: grifart/php7.1-with-gulp-and-all-php-modules
+  before_script:
+    - composer install --no-interaction --prefer-dist
+  script:
+    - composer run nette-tester
+    - composer run phpstan
+
+test.php8:
+  image: grifart/php8.0-with-all-modules-and-various-tools
   before_script:
     - composer install --no-interaction --prefer-dist
   script:
